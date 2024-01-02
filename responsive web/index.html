@@ -1,0 +1,368 @@
+<DOCTYPE html>
+    <html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Responsive Design</title>
+
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta name="author" content="Mnazareth">
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            
+            }
+            header{
+                background-color: aqua;
+                background-position: bottom;
+                width: 100%;
+                overflow: hidden;
+                height: 360px;
+            }
+            nav{
+                width: 100%;
+                background-color: rgba(0,0,0,0.8);
+                height: 120px;
+                text-decoration: none;
+                list-style: none;
+            }
+            nav ul{
+                float: right;
+                margin-right: 38px;
+                
+            }
+            ul li{
+                display: inline-block;
+                
+            }
+            ul li a{
+                color: white;
+                font-size: 18px;
+                text-transform: uppercase;
+                
+                margin-left: 20px;
+                text-decoration: none;
+                font-weight: 400;
+                cursor: pointer;
+            }
+            .logo{
+                color: white;
+                font-size: 40px;
+                font-family: Edwardian Script ITC;
+                font-weight: bold;
+                cursor: pointer;
+                text-transform: capitalize;
+                padding-left: 19px;
+                padding-top: 14px;
+                color: orange;
+            }
+            .hd{
+                margin: auto;
+                position: relative;
+                text-align: center;
+                justify-content: center;
+                margin-top: 58px;
+                text-transform: uppercase;
+                word-spacing: 1.5;
+            }
+            .hd h2{
+                font-size: 20px;
+                text-transform: capitalize;
+                color: orange;
+            }
+            #about{
+                background-color: aliceblue;
+                height: 280px;
+                align-content: center;
+                align-items: center;
+                position: relative;
+                text-align: center;
+                letter-spacing: 1.2px;
+            }
+            #about p{
+                margin-top: 28px;
+                width: 50%;
+                margin: auto;
+            }
+            center{
+                font-family: cursive;
+                font-size: 28px;
+                text-transform: capitalize;
+                font-weight: bold;
+                color: orangered;
+                margin-top: 12px;
+                margin-bottom: 20px;
+                
+            }
+            #services{
+                background-color: antiquewhite;
+                height: 570px;
+                
+            }
+            .images{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                margin-bottom: 12px;
+            }
+            .image{
+                padding: 40px;
+            }
+            .siz{
+                width: 80%;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                align-content: center;
+                margin: auto;
+                letter-spacing: 1.2px;
+            }
+            .siz p{
+                width: 50%;
+                margin: auto;
+            }
+            span{
+                color: orange;
+                font-weight: bold;
+            
+            }
+            span:hover{
+                text-decoration: underline;
+                cursor: pointer;
+                text-transform: capitalize;
+            }
+            figcaption{
+                font-size: 20px;
+                text-transform: capitalize;
+                font-weight: 600;
+                text-align: center;
+            }
+            #contact{
+                background-color: cadetblue;
+                height: 430px;
+            }
+            form{
+                margin: auto;
+                background-color: rgba(0,0,0,0.3);
+                height: 340px;
+                padding-left: 8px;
+                width: 31%;
+                box-shadow: 6px 6px 12px;
+                color: white;
+            }
+            textarea{
+                padding: 6px;
+            }
+            input{
+                margin-top: 20px;
+                width: 50%;
+                height: 28px;
+                border: none;
+                color: darkorange;
+                
+                padding: 7px;
+                background-color: transparent;
+                border-bottom: 2px solid black;
+            }
+            input[type="text"]{
+                text-transform: capitalize;
+                margin-top: 4px;
+                
+            }
+            fieldset{
+                padding: 2px;
+                border: 2px solid white;
+            }
+            legend{
+                font-weight: 600;
+                color: orange;
+            }
+            input[type="email"]{
+                margin-bottom: 12px;
+            }
+            label{
+                font-size: 19px;
+                font-weight: 500;
+            }
+            button{
+                left: 20%;
+                position: relative;
+                width: 126px;
+                height: 29px;
+                border: 0;
+                font-weight: 600;
+                color: orangered;
+                padding: 2px;
+                margin: 12px;
+            }
+            button:hover{
+                background-color: aquamarine;
+                text-decoration: underline;
+                transition: 2s ease-in-out;
+                cursor: pointer;
+            }
+            
+            .tim1{
+                display: flex;
+                padding: 12px;
+               
+            }
+            .tim img{
+                padding: 12px;
+            }
+            .tim{
+                width: 80%;
+                overflow:auto;
+                margin: auto;
+            }
+            footer{
+                background-color: aqua;
+                height: 80px;
+                text-align: center;
+            
+            }
+            #ft p{
+                margin-bottom: 16px;
+                margin: auto;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                text-align: center;
+                padding-top: 29px;
+            }
+            
+            
+            footer:hover{
+                text-decoration: underline;
+            }
+            
+            
+        </style>
+        
+        </head>
+        <body>
+        <header id="head">
+            <nav>
+            <div class="logo">coding market</div>
+                <ul>
+                <li><a href="#head">home</a></li>
+                <li><a href="#about">about </a></li>
+                <li><a href="#services">services </a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#team">our team</a></li>
+                </ul>
+            </nav>
+            <div class="hd">
+            <h1>only I can change my life</h1>
+            <h2>no one can do it for me</h2>
+                </div>
+            </header>
+            <section id="about">
+            <center>
+                <h3>about us</h3>
+                </center>
+                <p>Coding Market is a <span>tech</span> based company that offers online services to its clients. The company has its headquaters situated at Miamba, Coast Kenya. It was found in the year 2020 by <span>Mnazareth</span> Himself. The company began just as a local service-based company but now it's acknwledged globally. 
+             </p>
+            </section>
+            <section id="services">
+            <center>
+                <h3>services</h3>
+                </center>
+                <div class="siz">
+                <p>Coding Market Inc provides a variety of services to its customers. The company strives towards offerig quality services all at an affordable price and well welcomed to celebrate with us. We have  feedback channel where clients can contact us and have all queries solved.</p>
+                <div class="images">
+                <div class="image">
+                    <img src="./images/Web%20desighn.jpg"  width="350" height="350"  >
+                    <figcaption>Website Development</figcaption>
+                    </div>
+                    <div class="image">
+                    <img src="./images/mobi.jpg"  width="350" height="350"  >
+                    <figcaption>Mobile App Development</figcaption>
+                    </div>
+                    <div class="image">
+                    <img src="./images/cloud1.jpg" width="350" height="350" >
+                    <figcaption>Cloud Services</figcaption>
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+            <center>
+                <h3>contact us</h3>
+                </center>
+                <form>
+                <marquee><h3>Contact form</h3></marquee>
+                    <fieldset>
+                        <legend>Contact Us</legend>
+                    <div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="enter name" required>
+                        </div>
+                    <div>
+                    <label for="name">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div>
+                        <p>Describe your problem or comment below:</p>
+                    <textarea id="area" cols="40" rows="7" placeholder="Type your text" ></textarea>
+                    </div>
+                    <div>
+                    <button type="submit">Submit</button>
+                    </div>
+                        </fieldset>
+                </form>
+                
+            </section>
+            <section id="team">
+            <center>
+                <h3>our team</h3>
+                </center>
+                <div class="tim">
+                <p>The company has a team of 15 active members, some of these members are:</p>
+                    <marquee>
+                    <div class="tim1">
+                        
+                <div>
+                <img src="./images/pic1.jpg" width="260" height="290">
+                    <figcaption>Sir Mnazareth</figcaption>
+                </div>
+                <div>
+                <img src="./images/pic8.jpg" width="260" height="290">
+                    <figcaption>Sir Ramadhan</figcaption>
+                </div>
+                
+                <div>
+                <img src="./images/pic2.jpg" width="260" height="290">
+                    <figcaption>Sir Chiro</figcaption>
+                </div>
+                <div>
+                <img src="./images/kruise.png" width="260" height="290">
+                    <figcaption>Md Kruise</figcaption>
+                </div>
+                <div>
+                <img src="./images/pic3.jpg" width="260" height="290">
+                    <figcaption>Sir Macjoel</figcaption>
+                </div>
+                
+                   <div>
+                <img src="./images/pic6.jpg" width="260" height="290">
+                    <figcaption>Sir Mswahili</figcaption>
+                </div>
+                <div>
+                <img src="./images/pic5.jpg" width="260" height="290">
+                    <figcaption>Sir Nazarene</figcaption>
+                </div>
+                            
+                        </div>
+                    </marquee>
+                    </div>
+            </section>
+            <footer>
+            <div id="ft">
+                <p>All rights reserved © copyright 2020</p>
+                </div>
+            </footer>
+        </body>
+    </html>

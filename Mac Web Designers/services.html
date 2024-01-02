@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services</title>  
+<link rel="stylesheet" href="mac.css">
+<meta name="author" content="Chiro Mnazareth">
+    <meta name="description" content="Affordable and professional web Services">
+<meta name="keywords" content="Affordable Professional Web Services">
+</head>
+<body onload="typewritter()" >
+    <header>
+    
+        <nav>
+            <div class="logo"><span>Mac</span> Web Designs</div>
+        <ul>
+        <li><a href="mac.html">Home</a></li>    
+        <li><a href="about.html">About us</a></li>    
+        <li><a href="services.html"><span>Services</span></a></li>    
+        <li><a href="team.html">Our Team</a></li>    
+        </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Affordable Professional websites</h1>
+        <p id="par"></p>
+        
+        </div>
+        
+    </header>
+    
+    <div id="news">
+    <p id="new">Subscribe To Our Newsletter
+        <form>
+            
+        <input type="email" name="email" required placeholder="Enter email">    
+        <button type="submit" value="Subscribe">Subscribe</button>
+           
+        </form>
+        </p>
+    </div>
+    
+    <div id="main">
+    
+       <marquee><h2>Mac Web Designs Services</h2>
+        <h4>Quality services</h4>
+        </marquee> 
+        <form id="fm">
+        <h2 id="hd2">Services Questionnaire</h2>
+            <fieldset>
+                <legend>Contact Information</legend>
+            <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter full names" required>
+                </div>
+            <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email"  id="email" required placeholder="example@gmail.com">
+                </div>
+            <div>
+            <label for="phone">Phone Number:</label>
+            <input type="text" name="phone" id="phone"  placeholder="+254707316848">
+                </div>
+            <div>
+            <label for="age">Age:</label>
+                <input type="number" name="age" value="age" id="age" required placeholder="18">
+            </div>
+                </fieldset>
+            <p>
+            Select the services you need<br>
+                <select name="service" multiple>
+                <option value="Web Design">Web Design</option>
+                <option value="web Maintenance">Web Design</option>
+                <option value="Graphic design">Graphic Design</option>
+                <option value="Other"><a href="#comment">Other</a></option>
+                </select>
+            </p>
+            <p>Kindly describe your problem below:</p>
+            <textarea name="problem" id="comment" cols="40" rows="6" placeholder="Describe your problem below"></textarea>
+            <br>
+            <p>Are you satisfied with our services?<br>
+            <input type="radio" value="Yes" id="rd" checked name="services">Yes
+            <input type="radio" id="rd" value="No" name="services">No
+            </p>
+            <p>
+            <button type="submit" class="btn">Submit</button>
+            </p>
+        </form> 
+    </div>
+    
+    
+    <footer>
+    <p id="footer">Mac Web Designers copyright© 2021, All rights Reserved</p>
+    </footer>
+
+<script>
+        var i=0;
+        var txt='Get Quality Affordable Services';
+        var speed=80;
+        function typewritter(){
+            if(i<txt.length){
+                document.getElementById('par').innerHTML+=txt.charAt(i);
+                i++;
+                setTimeout(typewritter, speed);
+            }
+        }
+           
+</script>
+    
+</body>
+
+</html>

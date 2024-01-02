@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mac Web Designs Team</title>  
+<link rel="stylesheet" href="mac.css">
+<meta name="author" content="Chiro Mnazareth">
+    <meta name="description" content="Affordable and professional web designs">
+<meta name="keywords" content="Web designs, Affordable Web Designs, Professional Web Designs">
+</head>
+<body onload="typewritter()" >
+    <section>
+    
+        <nav>
+            <div class="logo"><span>Mac</span> Web Designs</div>
+        <ul>
+        <li><a href="mac.html">Home</a></li>    
+        <li><a href="about.html">About us</a></li>    
+        <li><a href="services.html">Services</a></li>    
+        <li><a href="team.html"><span>Our Team</span></a></li>    
+        </ul>
+        </nav>
+        <div class="header">
+            <h1>Mac Web Designs Te@m</h1>
+        <p id="par"></p>
+        
+        </div>
+        
+        <div id="txt">
+        <p id="p">
+        <img src="images/pic3.jpg" align="left" width="150" height="200" id="img"><br>
+            <caption><emp>Macjoel Mnazareth</emp></caption><br>
+            Macjoel Mnazareth is the founder of Mac Web Designs which is an online web service company that deals in:web designing, Web maintenance, Graphic design etc.<br>
+            <br>
+            Mac designs has a team of five hardworking developers which together ensure the company offers quality services at an affordable price to its customers
+            <em style="font-weight: bold" >A leader must inspire or his team will expire</em><br>Bang Gae
+            </p>
+        </div>
+        
+    </section>
+    
+    <div id="news">
+    <p id="new">Subscribe To Our Newsletter
+        <form>
+        <input type="email" name="email" required placeholder="Enter email">
+            
+        <button type="submit" value="Subscribe">Subscribe</button>
+        </form>
+        </p>
+    </div>
+    
+    <main>
+    <div id="maintext">
+       <marquee><h2>Mac Web Designs Team Members</h2>
+        <h4>Focus on being Productive not Busy</h4>
+        </marquee> 
+      <div class="pics">
+          <div class="pic1">
+        <img src="images/kruise.png" width="140" id="pic1" height="180" >
+          <h3>Lovelyn Kruise</h3>
+          <p>
+              Lovelyn being the one and only feminine in our team. She's a bold and confident lady who believes in finite possiblities. She is always dedicated to offer quality services with dignity that deserve every soul. She holds the saying that "What a man can do, a woman can do it much better"<br>
+            <em style="font-weight: bold" >If you can laugh together, you can work together</em><br>Robert Orben</p>
+              </div>
+        
+        <div class="pic2">
+        <img src="images/pic1.jpg" width="140" id="pic2" height="180" >
+            <h3>Chiro</h3>
+            <p>
+                Chiro is one of our team, an intelligent and religious man who will always stick by what is morally and ethical right. He's always optimistic and holds the saying that "It is impossible untill it is done". this man will always give his best in everying and sees failure as an opportunity to learn new tactics.
+                <br>
+            <em style="font-weight: bold" >Bad attitude will ruin your team</em><br>Terry Bradshaw
+            </p>
+        </div>
+        <div class="pic3">
+        <img src="images/pic8.jpg" width="140" id="pic3" height="180" >
+            <h3>Ramadhan</h3>
+            <p>Ramadhan is one of the members in our team. He's a gorgeous man and shrewed indeed. He will always work till late hours to ensure all clients are well sorted. He's also religious and believes in the miraclous nature of working as a time.He holds the saying that "No one is smarter than all of us" <br>
+            <em style="font-weight: bold" >The value of achievement lies in the achieving</em><br>Albert Einstein
+            </p>
+        </div>
+        <div class="pic4">
+        <img src="images/pic7.jpg" width="140" id="pic4" height="180" >
+            <h3>Mswahili</h3>
+            <p>Mswahili is our backend developer, a very committed individual who will always accomplish his tasks before time elapses. Being the only backend web developer in the organisation forced him to work extra harder each and everyday to ensure all the assignments and queries are solved in time. <br>
+            <em style="font-weight: bold" >If you want to lift yourself up, lift up someone else</em><br>Booker T. Washington
+            </p>
+        </div>
+          </div>
+    </div>
+    </main>
+    
+    <footer id="futa">
+    <p id="footer">Mac Web Designers copyright© 2021, All rights Reserved</p>
+    </footer>
+
+<script>
+        var i=0;
+        var txt='Teamwork makes the dream work🦾✔✌';
+        var speed=80;
+        function typewritter(){
+            if(i<txt.length){
+                document.getElementById('par').innerHTML+=txt.charAt(i);
+                i++;
+                setTimeout(typewritter, speed);
+            }
+        }
+           
+</script>
+    
+</body>
+
+</html>
